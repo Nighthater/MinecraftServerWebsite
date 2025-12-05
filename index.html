@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obstschale Servers</title>
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- Open Graph -->
+ <meta property="og:title" content="Minecraft Servers">
+ <meta property="og:description" content="Information about the Servers">
+ <meta property="og:image" content="https://obstschale.com/images/opengraph.jpg">
+ <meta property="og:url" content="https://example.com">
+ <meta property="og:type" content="website">
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+
+  <h1>Minecraft Servers</h1>
+
+  <div id="servers-container" class="server-grid"></div>
+
+  <div class="copy-toast">Copied!</div>
+
+  <!-- Load scripts in order -->
+  <script src="data/servers.js"></script>
+  <script src="data/modlists.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
