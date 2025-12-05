@@ -1,0 +1,40 @@
+/* ============ MAIN STYLES ============ */
+
+@import url('components.css');
+@import url('animations.css');
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #0e0f11;
+  margin: 0;
+  padding: 20px;
+  color: #e6e6e6;
+  overflow-x: hidden;
+  /* Prevent flash of unstyled content */
+  opacity: 0;
+  animation: bodyFadeIn 0.3s ease forwards;
+}
+
+@keyframes bodyFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 180, 255, 0.4);
+}
+
+/* Particle canvas */
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

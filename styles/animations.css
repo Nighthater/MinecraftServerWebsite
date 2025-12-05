@@ -1,0 +1,36 @@
+/* ============ ANIMATIONS ============ */
+
+/* ============ TAB ANIMATIONS ============ */
+
+.server-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+  width: 95%;
+  max-width: 1400px;
+  margin: auto;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.server-grid.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Initial page load animation */
+body.loaded .server-grid {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
