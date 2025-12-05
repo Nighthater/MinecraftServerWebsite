@@ -27,7 +27,7 @@ const archivedServers = [
   {
     category: ServerCategories.ARCHIVED,
     name: "Archived Server Name",
-    preview: "images/server2.png",
+    preview: "images/server1.png",
     address: "N/A",
     mapUrl: "N/A",
     worldDownload: "downloads/oldworld1.zip",
